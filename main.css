@@ -14,7 +14,7 @@
 }
 
 body {
-    background: url(images/bg-bottom.png) no-repeat bottom left , url(images/bg-top.png) no-repeat top right , #F2F2F2;
+    background: url(/images/bg-bottom.png) no-repeat bottom left , url(/images/bg-top.png) no-repeat top right , #F2F2F2;
     padding: 71px;
 }
 
