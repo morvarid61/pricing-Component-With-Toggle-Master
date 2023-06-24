@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/Montserrat-VariableFont_wght.ttf) format('woff2');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: url(/images/bg-bottom.svg) no-repeat bottom left, url(/images/bg-top.svg) no-repeat top right, #F2F2F2;
+    padding: 71px;
+}
+
+.switch-container {
+    font-weight: 700;
+    color: #6E728E;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.switch-time {
+    margin-top: 40px;
+    width: 239px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.switch {
+    background-color: #6E728E;
+    width: 56px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 10px;
+    
+}
+
+.switch::after {
+    content: "";
+    display: inline-block;
+    border-style: solid;
+    border-width: 12px;
+    margin: 4px 0 10px 22px;
+    box-shadow: 2px 1px 2px 1px rgb(99, 98, 98);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    position: relative;  
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    min-height: 70vh;
+    min-width: 100vh;
+    position: relative;
+    top: 64px;
+   
+}
+
+.Price-panel {
+    padding: 31px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #fff;
+    color: #6E728E;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+}
+
+
+.container-Basic p,
+ .container-Master p {
+    color: #4A4D60;
+    font-size: 72px;
+
+}
+
+.container-Professional {
+color: #fff;
+    background-color: #6D72DE;
+   
+}
+.container-Professional p{
+    color: #fff;
+    font-size: 72px;
+}
+.container-Professional button{
+    background-color: #fff;
+    border: none;
+border-radius:6px ;
+}
+button{
+    width: 288px;
+    height: 44px;
+    background-color: #6D72DE;
+    border: none;
+    border-radius: 6px;
+}

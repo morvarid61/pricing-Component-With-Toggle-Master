@@ -1,18 +1,16 @@
-#FYLO DATA STORAGE COMPONENT
+#Pricing Component With Toggle Master
 
 ##Description
-This project is a UI design of a website which is used to show storage and its free space.
-This design displays responsiveness on both desktop and mobile.
-The components used in it are X, Y, W and Z.
-
+A pricing component which is built out with [===] and [===] and can be toggled with mouse and keyboard. 
+It is responsive and completed with only HTML and CSS.
 ### screen shot
 
 ![Screen Shot](./ScreenShot.jpg)
 
 ### Links
 
-- Solution URL: [View here](https://github.com/morvarid61/Fylo-Data-Storage-Component-Master)
-- Live Site URL: [View here](https://morvarid61.github.io/Fylo-Data-Storage-Component-Master/)
+- Solution URL: [View here](https://github.com/morvarid61/pricing-Component-With-Toggle-Master)
+- Live Site URL: [View here](https://morvarid61.github.io/pricing-Component-With-Toggle-Master/)
 
 ## Author
 
