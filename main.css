@@ -15,6 +15,7 @@
 
 body {
     background: url(images/bg-bottom.png) no-repeat bottom left, url(images/bg-top.png) no-repeat top right, #F2F2F2;
+    background-size: calc(472px);
     position: relative;
     padding: 71px;
 }
@@ -38,11 +39,11 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-   
+    background:rgba(162, 167, 240, 1), rgba(105, 110, 221, 1);
 }
 
   .switch {
-    background-color: #A2A7F0;
+    background:linear-gradient(rgba(162, 167, 240, 1), rgba(105, 110, 221, 1));
     width: 56px;
     height: 32px;
     border-radius: 16px;
@@ -67,8 +68,6 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    min-height: 70vh;
-    min-width: 100vh;
     position: relative;
     top: 64px;
 
@@ -92,34 +91,53 @@ ul {
     list-style: none;
     overflow: inherit;
     
+   
+   
 }
 li{
-    padding: 12px;
-    border-bottom: #6E728E 1px solid;
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 12px;
-}
-.container-Basic p,
-.container-Master b {
+    padding: 52px;
+    color: #6E728E;
+    border-bottom:  rgba(110, 114, 142, 25%) 1px solid ;
+   
+    
+  }
+    h1{
+
+    color: #6E728E;
+font-size: 72px;
+padding: 30px;
+  }
+  b{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  h4{
+    text-align: center;
+    font-size: 72px;
+
+  }
+/* .container-Basic ,
+.container-Master  {
     color: #4A4D60;
     font-size: 72px;
 
-}
+} */
 .container-Professional {
     color: #fff;
     border-radius: 10px;
 background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
 box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
-
+padding-bottom: 54.5px;
 
 }
-
+.container-Professional ul{
+    /* border-bottom: rgba(255, 255, 255, 1); */
+}
 .container-Professional li  {
-    color: #fff;
-    font-size: 72px;
+border-bottom:rgba(255, 255, 255, 0.781) 1px solid;
+    
+    /* font-size: 72px; */
 }
 .container-Professional h5{
     color: #FFF;
@@ -136,7 +154,7 @@ line-height: 28px;
 }
 
 button {
-    margin-top: 32px;
+    margin: 0 auto;
     width: 288px;
     height: 44px;
     background-color: #6D72DE;
