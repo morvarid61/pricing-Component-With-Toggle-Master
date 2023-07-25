@@ -15,54 +15,63 @@
 
 body {
     background: url(images/bg-bottom.png) no-repeat bottom left, url(images/bg-top.png) no-repeat top right, #F2F2F2;
-    background-size: calc(472px);
-    position: relative;
+    background-size: 450px;
+    /* position: relative; */
     padding: 71px;
-}
-
-.switch-container {
-    font-weight: 700;
-    color: #6E728E;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
 }
 
-.switch-time {
-    margin-top: 40px;
-    width: 239px;
-    height: 32px;
-     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    background:rgba(162, 167, 240, 1), rgba(105, 110, 221, 1);
+h2 {
+    color: #6E728E;
 }
 
-  .switch {
-    background:linear-gradient(rgba(162, 167, 240, 1), rgba(105, 110, 221, 1));
-    width: 56px;
-    height: 32px;
+.toggle-container {
+    display: inline-flex;
+    align-items: center;
+    color: #696EDD;
+
+
+}
+
+.label-text {
+    color: rgba(110, 114, 142, 0.5);
+    margin: 24px;
+}
+
+.toggle {
     border-radius: 16px;
-    margin-left: 10px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    width: 60px;
+    height: 30px;
+overflow: hidden;
+
+}
+
+.toggle-state{
+   
+    display:none; 
+}
+
+.indicator {
+    height: 100%;
+    width: 200%;
+        background-color: #fff;
+    transform:translate3d(-75%,0px,0px);
+    box-shadow: -8px -4px 8px 0 #fff, 8px 4px 12px 0 #6D72DE;
+    border-radius: 15px;
+    cursor: pointer;
     
 }
 
-.switch::after {
-    content: "";
-    display: inline-block;
-    border-style: solid;
-    border-width: 12px;
-    margin: 4px 0 10px 22px;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
+.toggle-state:checked ~ .indicator{
+    transform: translate3d(25%,0px,0px);
+    
    
-} 
+}
 
 .container {
     display: flex;
@@ -70,7 +79,6 @@ body {
     border-radius: 10px;
     position: relative;
     top: 64px;
-
 }
 
 .Price-panel {
@@ -80,77 +88,91 @@ body {
     background-color: #fff;
     color: #6E728E;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     border-radius: 10px;
-
 }
 
 ul {
     list-style: none;
     overflow: inherit;
-    
-   
-   
+
+
+
 }
-li{
-    padding: 52px;
+
+li {
+    padding: 32px;
     color: #6E728E;
-    border-bottom:  rgba(110, 114, 142, 25%) 1px solid ;
-   
-    
-  }
-    h1{
+    border-bottom: rgba(110, 114, 142, 25%) 1px solid;
+
+
+}
+
+h1 {
 
     color: #6E728E;
-font-size: 72px;
-padding: 30px;
-  }
-  b{
+    font-size: 72px;
+    padding: 30px;
+}
+
+b {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 15px;
-  }
-  h4{
+}
+
+h4 {
     text-align: center;
     font-size: 72px;
 
-  }
-/* .container-Basic ,
-.container-Master  {
-    color: #4A4D60;
-    font-size: 72px;
+}
 
-} */
+ .container-Basic,
+  .container-Master{ 
+    color: #4A4D60;
+
+} 
+
 .container-Professional {
     color: #fff;
     border-radius: 10px;
-background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
-box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
-padding-bottom: 54.5px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
+    padding: 54px;
+
 
 }
-.container-Professional ul{
-    /* border-bottom: rgba(255, 255, 255, 1); */
+
+.container-Professional h1 {
+    color: #fff;
 }
-.container-Professional li  {
-border-bottom:rgba(255, 255, 255, 0.781) 1px solid;
-    
-    /* font-size: 72px; */
+
+.container-Professional li {
+    border-bottom: rgba(255, 255, 255, 0.781) 1px solid;
+    color: #fff;
+
 }
-.container-Professional h5{
-    color: #FFF;
-text-align: center;
-font-size: 18px;
-font-family: Montserrat;
-font-weight: 700;
-line-height: 28px;
+
+.container-Professional h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 28px;
 }
+
 .container-Professional button {
     background-color: #fff;
     border: none;
     border-radius: 6px;
+    color: #6D72DE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.393px;
 }
 
 button {
@@ -161,6 +183,11 @@ button {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    top: 32px;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+
 }
 
 @media only screen and (max-width:1111px) {
